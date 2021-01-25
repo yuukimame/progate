@@ -49,6 +49,10 @@ header{
   margin-left: 10px;
 }
 
+.sp-navi{
+  display: none;
+}
+
 nav{
   margin: 0 10px 0 auto;
 }
@@ -204,6 +208,11 @@ small{
     margin-bottom: 50px;
   }
 
+  /* header */
+  .sp-navi{
+    display: none;
+  }
+
   /* lesson */
   .boxes{
     flex-wrap: wrap;
@@ -217,6 +226,78 @@ small{
   /* message */
   .message-wrapper{
     padding-bottom: 50px;
+  }
+
+  footer{
+    text-align: center;
+  }
+}
+
+@media screen and (max-width:670px){
+  h1{
+    font-size: 25px;
+    text-align: left;
+    letter-spacing: 0.5rem;
+  }
+
+  h2{
+    font-size: 20px;
+  }
+
+  /* header */
+  nav{
+    display: none
+  }
+
+  .sp-nav{
+    margin: 0 50px 0 auto;
+    width: 20px;
+  }
+
+  .sp-nav span{
+    display: block;
+    position: absolute;
+    width: 30px;
+    border-bottom: 3px solid #fff;
+    border-radius: 3px;
+    transition: .35s ease-in-out;
+  }
+
+  .sp-nav span:nth-child(1){
+    top: 16px;
+  }
+
+  .sp-nav span:nth-child(2){
+    top: 28px;
+  }
+
+  .sp-nav span:nth-child(3){
+    top: 40px;
+  }
+
+
+  /* top */
+  .btn{
+    width: 100%;
+  }
+
+  /* lesson */
+  .lesson-wrapper h2{
+    margin-bottom: 20px;
+  }
+
+  .box{
+    flex-basis: 94%;
+    margin-bottom: 50px;
+  }
+
+  /* message */
+  .message-wrapper{
+    padding-bottom: 50px;
+  }
+
+  .message-wrapper h2{
+    margin-bottom: 5px;
   }
 
   footer{
